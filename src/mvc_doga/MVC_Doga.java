@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package mvc_doga;
 
-/**
- *
- * @author pfiffer.attila
- */
+// Pfiffer Attila
+import vezerlo.DogaVezerlo;
+import modell.DogaModell;
+import nezet.DogaNezet;
 public class MVC_Doga {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        DogaModell modell = new DogaModell();
+        DogaNezet nezet = new DogaNezet();
+        new DogaVezerlo(modell, nezet);
+        
     }
     
 }
